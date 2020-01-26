@@ -10,6 +10,7 @@ public class SimpleTypes {
         System.out.println("Wygrana w lottto to " + lottoReward);
 
         short dayOfMonth = 29;
+
         System.out.println("Dzień miesiąca " + dayOfMonth );
         dayOfMonth = 23;
         System.out.println("Dzień miesiąca " + dayOfMonth );
@@ -18,12 +19,31 @@ public class SimpleTypes {
         System.out.println("Liczba PI to " + PI_PI);
 
         double rozmiar = 52.234567890D;
+
         System.out.println(rozmiar);
 
         boolean isPaid = false;
-        System.out.println("Czy zapłacono rachunek? " + isPaid);
+        String isPaidTxt = isPaid ? "tak" : "nie";
+
+        System.out.println("Czy zapłacono rachunek? " + isPaidTxt);
         isPaid = true;
-        System.out.println("a może teraz jest zapłacone? " + isPaid);
+        isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("a może teraz jest zapłacone? " + isPaidTxt);
+
+        int index = 1;
+
+
+        String name = "Andrzej";
+        char aletter = name.charAt(index);
+
+        System.out.println((index + 1) + " literka w imieniu " + name + " to " + aletter);
+
+        String prefix = "an";
+        boolean issStartingWith = name.startsWith(prefix);
+        System.out.println("Czy imię " + name + " zaczyna  się od  " + prefix + "? : " + issStartingWith);
+
+
+
 
 
 
